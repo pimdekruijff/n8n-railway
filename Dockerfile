@@ -12,12 +12,10 @@ RUN apk --update add --virtual build-dependencies python3 build-base && \
 
 WORKDIR /data
 
-# Zet default poort
 ENV N8N_PORT=5678
 ENV PORT=5678
 ENV N8N_USER_ID=root
 
 EXPOSE 5678
 
-# Belangrijk: correcte CMD
 CMD ["n8n", "start"]
