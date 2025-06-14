@@ -1,4 +1,3 @@
-# main.py
 import pandas as pd
 from fastapi import FastAPI, Query
 from datetime import datetime
